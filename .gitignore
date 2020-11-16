@@ -1,3 +1,5 @@
 .idea/
 Computer.iml
 Project.iml
+src/computer/Main.java
+out/

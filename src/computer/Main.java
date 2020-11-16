@@ -1,4 +1,5 @@
 package computer;
+import computer.processors.IntelProcessor;
 
 import computer.storage.HDD;
 import computer.storage.SSD;
@@ -7,7 +8,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        HDD my_hdd=new HDD(100);
-        SSD my_ssd=new SSD(100);
+        IntelProcessor my_processor = new IntelProcessor(2000, 4);
+        System.out.println(my_processor.add(2,3));
+        System.out.println(my_processor.devide(4,2));
     }
 }

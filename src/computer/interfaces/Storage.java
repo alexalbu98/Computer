@@ -3,12 +3,9 @@ package computer.interfaces;
 import java.util.ArrayList;
 
 public interface Storage {
-
-    public void write();
-    public void delete();
-    public void read();
-    public void add_to_list(Object stored_data);
-    public void remove_from_list(Object stored_data);
+    public void write(Object stored_data);
+    public void delete(Object stored_data);
+    public void read(int index);
     public int getCapacity();
     public ArrayList<Object> getStored_data();
 

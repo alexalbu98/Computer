@@ -8,5 +8,5 @@ public interface Storage {
     public void read(int index);
     public int getCapacity();
     public ArrayList<Object> getStored_data();
-
+    public int getSpeed();
 }

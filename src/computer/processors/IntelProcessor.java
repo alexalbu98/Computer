@@ -1,4 +1,5 @@
 package computer.processors;
+import computer.exceptions.DivideByZeroException;
 import computer.interfaces.Processor;
 
 public class IntelProcessor implements Processor {
@@ -28,7 +29,15 @@ public class IntelProcessor implements Processor {
     }
 
     @Override
-    public int devide(int a, int b) {
+    public int divide(int a, int b) {
+        try {
+            if (b == 0) {
+                throw new DivideByZeroException("Cannot divide by zero!");
+            }
+        }catch (DivideByZeroException exp){
+            System.out.println(exp.getMessage());
+            return -1;
+        }
         return a/b;
     }
 

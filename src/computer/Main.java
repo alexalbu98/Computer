@@ -20,8 +20,8 @@ public class Main {
         SSD my_ssd=new SSD(200,300);
         RAM my_ram=new RAM(300,200);
         ROM my_rom=new ROM(200,400);
-        Object my_obj=new CPU_Process("test","test");
+        Object my_obj=new String("test_hdd");
         my_hdd.write(my_obj);
-        
+
     }
 }

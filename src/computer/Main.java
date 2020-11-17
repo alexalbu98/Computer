@@ -1,5 +1,9 @@
 package computer;
+import computer.applications.Cat;
+import computer.interfaces.Application;
 import computer.interfaces.Process;
+import computer.memory.RAM;
+import computer.memory.ROM;
 import computer.processes.CPU_Process;
 import computer.processors.IntelProcessor;
 
@@ -10,10 +14,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CPU_Process proc = new CPU_Process("test", "test");
-        System.out.printf("%d\n", proc.getProcess_id());
-        CPU_Process proc2 = new CPU_Process("test2", "test2");
-        System.out.printf("%d\n", proc2.getProcess_id());
+
+        Application app = new Cat("C:\\Users\\Work\\IdeaProjects\\Project\\LICENSE");
+        app.execute();
 
     }
 }

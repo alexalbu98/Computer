@@ -14,6 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+
         Application app = new Cat("C:\\Users\\Work\\IdeaProjects\\Project\\LICENSE");
         app.execute();
 

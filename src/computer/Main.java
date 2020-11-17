@@ -1,4 +1,6 @@
 package computer;
+import computer.applications.Cat;
+import computer.interfaces.Application;
 import computer.interfaces.Process;
 import computer.memory.RAM;
 import computer.memory.ROM;
@@ -12,16 +14,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CPU_Process proc = new CPU_Process("test", "test");
-        System.out.printf("%d\n", proc.getProcess_id());
-        CPU_Process proc2 = new CPU_Process("test2", "test2");
-        System.out.printf("%d\n", proc2.getProcess_id());
-        HDD my_hdd=new HDD(100,200);
-        SSD my_ssd=new SSD(200,300);
-        RAM my_ram=new RAM(300,200);
-        ROM my_rom=new ROM(200,400);
-        Object my_obj=new String("test_hdd");
-        my_hdd.write(my_obj);
+
+        Application app = new Cat("C:\\Users\\Work\\IdeaProjects\\Project\\LICENSE");
+        app.execute();
 
     }
 }
